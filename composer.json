@@ -1,5 +1,5 @@
 {
-    "name": "kiwilan/php-ebook",
+    "name": "hoardertools/php-ebook",
     "description": "PHP package to read metadata and extract covers from eBooks, comics and audiobooks.",
     "version": "3.0.04",
     "keywords": [
@@ -28,7 +28,7 @@
         "audiobook",
         "fb2"
     ],
-    "homepage": "https://github.com/kiwilan/php-ebook",
+    "homepage": "https://github.com/hoardertools/php-ebook",
     "license": "MIT",
     "authors": [
         {
