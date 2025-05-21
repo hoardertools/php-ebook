@@ -89,7 +89,7 @@ class Ebook
     /**
      * Read an ebook file.
      */
-    public static function read(string $path): ?self
+    public static function read(string $path, $skipCover = false): ?self
     {
         $start = microtime(true);
         $self = self::parseFile($path);
@@ -111,7 +111,9 @@ class Ebook
 
         $self->parser = EbookParser::make($format);
         $self->convertEbook();
-        $self->cover = $self->parser->getModule()->toCover();
+        if($skipCover === false){
+            $self->cover = $self->parser->getModule()->toCover();
+        }
         $self->metaTitle = MetaTitle::fromEbook($self);
         $self->clean();
 
