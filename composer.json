@@ -1,7 +1,7 @@
 {
     "name": "hoardertools/php-ebook",
     "description": "PHP package to read metadata and extract covers from eBooks, comics and audiobooks.",
-    "version": "3.0.04",
+    "version": "1.1",
     "keywords": [
         "php",
         "ebook",
