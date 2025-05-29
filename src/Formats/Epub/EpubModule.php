@@ -90,8 +90,10 @@ class EpubModule extends EbookModule
         $tags = [];
         if (! empty($this->opf->getDcSubject())) {
             foreach ($this->opf->getDcSubject() as $subject) {
-                if (strlen($subject) < 50) {
-                    $tags[] = $subject;
+                if(is_string($subject)) {
+                    if (strlen($subject) < 50) {
+                        $tags[] = $subject;
+                    }
                 }
             }
         }
